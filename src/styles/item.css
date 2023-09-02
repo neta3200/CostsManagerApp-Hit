@@ -1,0 +1,31 @@
+.item-display-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.price-display-body {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 18px;
+}
+.item-display-body {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.divider {
+    border-top: 1px solid #ccc; /* You can adjust the style of the line */
+    margin: 10px 0; /* Adjust the margin to control the space between the header and body */
+}
+
+.item-display {
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 320px;
+    margin: 15px;
+    padding: 15px;
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px 5px lightgray;
+}
