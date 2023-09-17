@@ -20,7 +20,7 @@ const AddItem = () => {
     const handlingSubmit = async (event) => {
         event.preventDefault();
         const storage = new openCostsDB();
-        await storage.adddtorage(item);
+        await storage.addtodb(item);
         setPopup(true);
         setItem({
             name: '',

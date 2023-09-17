@@ -5,7 +5,7 @@ class openCostsDB {
     }
 
     //async func that let us get the product list asynchronically from the local storage
-    async getstorage() {
+    async getdb() {
         try {
 
             let result=await localStorage.getItem("products");
@@ -18,7 +18,7 @@ class openCostsDB {
         }
     }
     //async func that let us add product list asynchronically to the local storage
-    async adddtorage(product) {
+    async addtodb(product) {
 
         try {
 

@@ -13,7 +13,7 @@ export default function ItemList() {
     useEffect( () => {
         const lists = async () => {
             const storage = new openCostsDB();
-            const l = await storage.getstorage();
+            const l = await storage.getdb();
             setPreviousItems(l);
             setItems(l);
         }
