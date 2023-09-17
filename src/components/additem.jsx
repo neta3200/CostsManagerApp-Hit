@@ -32,13 +32,13 @@ const AddItem = () => {
     };
 
     return (
-        <div>
+        <div className="page-container">
             <div className="container d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
                 {/*the display form the user need to insert the product details*/}
                 <form className="form-add p-5 border border-primary rounded" onSubmit={handlingSubmit}>
                     <h2 className="text-center mb-4">Add Item</h2>
+                    <label htmlFor="name">Full Name:</label>
                     <div className="form-group" >
-                        <label htmlFor="name">Name:</label>
                         <input
                             type="text"
                             id="name"
@@ -49,8 +49,8 @@ const AddItem = () => {
                             required
                         ></input>
                     </div>
+                    <label htmlFor="price">Price:</label>
                     <div className="form-group">
-                        <label htmlFor="price">Price:</label>
                         <input
                             type='number'
                             min="1"
@@ -63,8 +63,8 @@ const AddItem = () => {
                             required
                         />
                     </div>
+                    <label htmlFor="date">Date:</label>
                     <div className="form-group">
-                        <label htmlFor="date">Date:</label>
                         <input
                             type="date"
                             id="date"
@@ -75,9 +75,8 @@ const AddItem = () => {
                             required
                         />
                     </div>
-
+                    <label htmlFor="category">Category:</label>
                     <div className="form-group">
-                        <label htmlFor="category">Category:</label>
                         <select
                             id="category"
                             name="category"
@@ -96,8 +95,8 @@ const AddItem = () => {
                         </select>
                     </div>
 
+                    <label htmlFor="description">Description:</label>
                     <div className="form-group">
-                        <label htmlFor="description">Description:</label>
                         <textarea
                             id="description"
                             name="description"
