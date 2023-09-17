@@ -12,8 +12,8 @@ export default function ItemList() {
 
     useEffect( () => {
         const lists = async () => {
-            const storage = new openCostsDB();
-            const l = await storage.getdb();
+            const storage = new openCostsDB("CostsManagerDB");
+            const l = await storage.get();
             setPreviousItems(l);
             setItems(l);
         }

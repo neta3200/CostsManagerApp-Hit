@@ -19,8 +19,8 @@ const AddItem = () => {
 
     const handlingSubmit = async (event) => {
         event.preventDefault();
-        const storage = new openCostsDB();
-        await storage.addtodb(item);
+        const storage = new openCostsDB("CostsManagerDB");
+        await storage.add(item);
         setPopup(true);
         setItem({
             name: '',
