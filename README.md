@@ -1,5 +1,6 @@
 # Getting Started with Costs Manager App
-#### This project was created by Netanel Eiluz & Daniel Davosh 
+#### This project was created by 
+#### Netanel Eiluz ID 205856354 & Daniel Davosh ID 316013671
 
 ## How to run this Web Application?
 
