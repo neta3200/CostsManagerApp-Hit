@@ -1,6 +1,6 @@
 import '../styles/itemlist.css';
 import React, {useState, useEffect} from 'react';
-import LocalStorageWrapper from '../localstorage';
+import openCostsDB from '../idb';
 import Item from '../components/item';
 
 export default function ItemList() {
@@ -12,7 +12,7 @@ export default function ItemList() {
 
     useEffect( () => {
         const lists = async () => {
-            const storage = new LocalStorageWrapper();
+            const storage = new openCostsDB();
             const l = await storage.getstorage();
             setPreviousItems(l);
             setItems(l);

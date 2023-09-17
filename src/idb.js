@@ -1,4 +1,4 @@
-class LocalStorageWrapper {
+class openCostsDB {
 
     constructor() {
         this.storage = window.localStorage;
@@ -40,4 +40,4 @@ class LocalStorageWrapper {
         }
     }
 }
-export default LocalStorageWrapper;
+export default openCostsDB;

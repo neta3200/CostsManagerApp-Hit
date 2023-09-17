@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import LocalStorageWrapper from "../localstorage";
+import openCostsDB from "../idb";
 import '../styles/additem.css';
 
 const AddItem = () => {
@@ -19,7 +19,7 @@ const AddItem = () => {
 
     const handlingSubmit = async (event) => {
         event.preventDefault();
-        const storage = new LocalStorageWrapper();
+        const storage = new openCostsDB();
         await storage.adddtorage(item);
         setPopup(true);
         setItem({
