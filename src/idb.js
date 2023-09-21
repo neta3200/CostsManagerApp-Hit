@@ -1,10 +1,11 @@
-//  Student1: Netanel Iluz ID: 205856354
-//  Student2: Daniel Dabush ID: 316013671
+/*  Student1: Netanel Iluz ID: 205856354
+    Student2: Daniel Dabush ID: 316013671 */
 
 class openCostsDB {
 
-    constructor(dbName) {
+    constructor(dbName, version = 1) {
         this.dbName = dbName;
+        this.version = version
         this.db = null;
     }
 
@@ -53,7 +54,7 @@ class openCostsDB {
         }
     }
 
-    async add(product) {
+    async addCost(product) {
         try {
             if (!this.db) {
                 await this.openDatabase();
@@ -77,5 +78,11 @@ class openCostsDB {
         }
     }
 }
+
+const idb = {
+    openCostsDB(dbName, version) {
+        return new openCostsDB(dbName, version);
+    }
+};
 
 export default openCostsDB;

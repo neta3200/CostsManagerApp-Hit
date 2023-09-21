@@ -21,11 +21,11 @@
         const db = await idb.openCostsDB("costsdb",1);
 
         const result1 =
-            await db.add({sum:200,category:"HOUSING",
+            await db.addCost({sum:200,category:"HOUSING",
                 description:"rent for 01.2023"});
 
         const result2 =
-            await db.add({sum:300,category:"FOOD",
+            await db.addCost({sum:300,category:"FOOD",
                 description:"food for weekend"});
 
         if(db) {
